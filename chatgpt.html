@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAAHICK- PORTFOLIO</title>
+    <style>
+        ::-webkit-scrollbar {
+            width: 12px; 
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 5px; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #888; 
+            border-radius: 5px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555; 
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box; 
+        }
+        body {
+            background-color: rgb(0 0 33);
+            color: white;
+            font-family: "Poppins", sans-serif;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 10vh;
+            background-color: rgb(18 18 62);
+            width: 100vw;
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        nav ul li {
+            list-style: none;
+            margin: 0px 23px;
+        }
+        .left {
+            font-size: 1.5rem;
+        }
+        .hamburger {
+            display: none; 
+            cursor: pointer; 
+            font-size: 1.5rem; 
+        }
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 140px 0px;
+        }
+        .firstsection > div {
+            width: 30%;
+        }
+        .leftsection img{
+             width:80%;
+             opacity: 0.5;
+        }
+        .rightsection img {
+            width: 80%;
+        }
+        .purple {
+            color: red;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+        nav ul li a:hover {
+            color: rgb(153, 153, 226);
+            font-size: 1.05rem;
+        }
+        main hr {
+            background: #9c97f1;
+            height: 1.2px;
+            margin: 40px 84px;
+            border: 0;
+        }
+        #element {
+            color: white;
+        }
+        .text-gray {
+            color: gray;
+        }
+        .about {
+            display: flex;
+            justify-content: space-around;
+            gap: 100px;
+            align-items: center;
+        }
+        .leftabout, .leftedu, .leftachieve {
+            color: hotpink;
+            border: 1px solid white;
+            border-radius: 40px;
+            padding: 60px 20px;
+            font-size: 1.5rem;
+            background-color: white;
+            opacity: 0.5;
+            width: 800px;
+        }
+        .leftskills {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow-wrap: wrap;
+        }
+        .leftskills img {
+            height: 170px;
+            margin: 50px;
+        }
+        .leftcontactme {
+            height: 400px;
+            width: 400px;
+            border: 1px solid white;
+            border-radius: 50px;
+            color: hotpink;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            background-color: white;
+            opacity: 0.5;
+        }
+        svg {
+            height: 30px;
+            background-color: white;
+            margin-right: 10px;
+        }
+        #git {
+            width: 80px;
+            margin: 10px;
+        }
+        .git a {
+            text-decoration: none;
+            color: hotpink;
+        }
+        .highlight {
+            color: hotpink;
+        }
+        header {
+            position: sticky;
+            top: 0px;
+            width: 100vw;
+        }
+
+        /* Mobile Styles */
+        @media (max-width: 1081px) {
+            
+            .leftsection{
+                  background-size: contain;
+                  height: auto;
+            }
+            nav {
+                flex-direction: column; 
+                align-items: flex-start; 
+                height: auto; 
+                
+            }
+            .left {
+                font-size: 1.2rem; 
+                margin: 10px 0; 
+            }
+            .right {
+                width: 100vw; 
+            }
+            nav ul {
+                flex-direction: column; 
+                width: 100%; 
+                display: none; /* Hide by default */
+                padding: 0; 
+                margin: 0; 
+            }
+            nav ul.active {
+                display: flex; /* Show when active */
+            }
+            nav ul li {
+                text-align: center; 
+                width: 100vw; 
+            }
+            nav ul li a {
+                padding: 10px; 
+            }
+            .hamburger {
+                display: block; 
+            }
+            
+            .firstsection, .secondsection, .Thirdsection, .fourthsection, .fifthsection, .sixthsection {
+                flex-direction: column; 
+                padding: 20px; 
+                width: 100vw; 
+                
+            }
+            .leftsection, .rightsection {
+                width: 100%; 
+                margin: 0; 
+                text-align: center; 
+            }
+            .rightsection img {
+                width: 90%; 
+            }
+            .about {
+                flex-direction: column; 
+                align-items: center; 
+            }
+            .leftabout, .leftedu, .leftachieve, .leftcontactme { 
+                margin: 100px 0; 
+                width:50vw;
+            }
+            p ,li{
+                font-size: 1rem;
+            }
+            .leftskills {
+                flex-wrap: wrap; 
+                justify-content: center; 
+            }
+            .leftskills img {
+                height: 100px; 
+                margin: 20px; 
+            }
+            h1 {
+                font-size: 2rem; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="1"></div>
+    <header>
+        <nav>
+            <div class="left"><span class="highlight">C</span>henna<span class="highlight">K</span>eshav Profile</div>
+            <div class="hamburger" id="hamburger">&#9776;</div>
+            <div class="right" id="navbar">
+                <ul>
+                    <li><a href="#1">Home</a></li>
+                    <li><a href="#2">About</a></li>
+                    <li><a href="#3">Education</a></li>
+                    <li><a href="#4">Skills</a></li>
+                    <li><a href="#5">Achievements</a></li>
+                    <li><a href="#6">Contact me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                <img src="./IMG_20240527_073417_841.jpg" class="mypic" alt="">
+                <div id="element"></div>
+            </div>
+            <div class="rightsection">
+                <img src="./pic.png" alt="">
+            </div>
+        </section>
+
+        <section class="secondsection" id="2">
+            <hr>
+            <div style="display: flex; justify-content: space-around; align-items: center; flex-direction: column;">
+                <h1>About</h1>
+                <div class="about">
+                    <div class="leftabout">
+                        <p>Myself Chennakeshav. I am a student of IIT Indore pursuing my B.Tech second year in CSE department. I am passionate about DSA and Web Development.</p>
+                    </div>
+                    <div class="rightabout"><img width="500px" src="./indian-institute-of-technology-indore-239004.jpg" alt=""></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="Thirdsection" id="3">
+            <hr>
+            <div style="display: flex; justify-content: space-around; align-items: center; flex-direction: column;">
+                <h1>Education</h1>
+                <div class="Education">
+                    <div class="leftedu">
+                        <p>I completed my 10th standard at City Talent School in Suryapet, and I completed my intermediate studies at Narayana College in Hyderabad. Currently, I am doing my B.Tech at IIT Indore in CSE department.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="fourthsection" id="4">
+            <hr>
+            <div style="display: flex; justify-content: space-around; align-items: center; flex-direction: column;">
+                <h1>Skills</h1>
+                <div class="Skills">
+                    <div class="leftskills">
+                        <img src="./html.png" alt="">
+                        <img src="./css.png" alt="">
+                        <img src="./javascript.jpg" alt="">
+                        <img src="./CPP_Tutorial.avif" alt="">
+                        <img src="./dsa.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="fifthsection" id="5">
+            <hr>
+            <div style="display: flex; justify-content: space-around; align-items: center; flex-direction: column;">
+                <h1>Achievements</h1>
+                <div class="Achievements">
+                    <div class="leftachieve">
+                        <li style="margin-bottom:30px">Secured AIR-2323 rank in IIT-JEE Advanced 2023</li>
+                        <li style="margin-bottom:30px">Secured AIR-1569 position in IIT-JEE Mains 2023</li>
+                        <li>Got Seat in Prestigious Institution IIT INDORE</li>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sixthsection" id="6">
+            <hr>
+            <div style="display: flex; justify-content: space-around; align-items: center; flex-direction: column;">
+                <h1>Contact me</h1>
+                <div class="Contactme">
+                    <div class="leftcontactme">
+                        <div style="display: flex; justify-content: space-around; align-items: center;">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 48 48">
+                                <path fill="#4caf50" d="M45,16.2l-5,2.75l-5,4.75L35,40h7c1.657,0,3-1.343,3-3V16.2z"></path>
+                                <path fill="#1e88e5" d="M3,16.2l3.614,1.71L13,23.7V40H6c-1.657,0-3-1.343-3-3V16.2z"></path>
+                                <polygon fill="#e53935" points="35,11.2 24,19.45 13,11.2 12,17 13,23.7 24,31.95 35,23.7 36,17"></polygon>
+                                <path fill="#c62828" d="M3,12.298V16.2l10,7.5V11.2L9.876,8.859C9.132,8.301,8.228,8,7.298,8h0C4.924,8,3,9.924,3,12.298z"></path>
+                                <path fill="#fbc02d" d="M45,12.298V16.2l-10,7.5V11.2l3.124-2.341C38.868,8.301,39.772,8,40.702,8h0 C43.076,8,45,9.924,45,12.298z"></path>
+                            </svg>
+                            cse230001023@iiti.ac.in
+                        </div>
+                        <div style="display: flex; justify-content: space-around; align-items: center;">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/>
+                            </svg>
+                            9238354922
+                        </div>
+
+                        <div class="git" style="display: flex; justify-content: center; align-items: center;">
+                            <img id="git" src="./github_PNG23-Photoroom.png" alt="">
+                            <a href="https://github.com/MaahiCK" target="_blank">GitHub Profile</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Hi I am Maahi', ''],
+            typeSpeed: 100,
+        });
+
+        const hamburger = document.getElementById('hamburger');
+        const navbar = document.getElementById('navbar');
+
+        hamburger.addEventListener('click', () => {
+            navbar.querySelector('ul').classList.toggle('active'); // Toggle the active class on the ul
+        });
+    </script>
+</body>
+</html>
